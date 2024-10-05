@@ -1,16 +1,10 @@
 # Test-Time Adaptation for Keypoint-Based Spacecraft Pose Estimation Based on Predicted-View Synthesis
 
-<<<<<<< HEAD
-Official **PyTorch** Implementation of **Test-Time Adaptation for Keypoint-Based Spacecraft Pose Estimation Based on Predicted-View Synthesis** by Juan Ignacio Bravo Pérez-Villar, Álvaro García-Martín, Jesús Bescós, and Juan C. San-Miguel  (IEEE Transactions on Aerospace and Electronic Systems).
-=======
-Official Pytorch Implementation of Test-Time Adaptation for Keypoint-Based Spacecraft Pose Estimation Based on Predicted-View Synthesis by Juan Ignacio Bravo Pérez-Villar, Álvaro García-Martín, Jesús Bescós, and Juan C. San-Miguel  (IEEE Transactions on Aerospace and Electronic Systems).
-
-![novel-view-VII-final-1](https://github.com/user-attachments/assets/6e77d2ac-aab9-4dbb-b1e9-722aa8ebcbee)
->>>>>>> 2a1f09d85b1b68ad92402f2199345551cfd1add7
-
-![novel-view-VII-final-1](https://github.com/user-attachments/assets/6e77d2ac-aab9-4dbb-b1e9-722aa8ebcbee)
 
 
+Official **Pytorch** Implementation of Test-Time Adaptation for **Keypoint-Based Spacecraft Pose Estimation Based on Predicted-View Synthesis** by Juan Ignacio Bravo Pérez-Villar, Álvaro García-Martín, Jesús Bescós, and Juan C. San-Miguel  (IEEE Transactions on Aerospace and Electronic Systems).
+
+[novel-view-VII-final-1](https://github.com/user-attachments/assets/6e77d2ac-aab9-4dbb-b1e9-722aa8ebcbee)
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/22771127/185179617-e77acf05-2f93-45dc-9d2d-a9d771e48d0b.png" alt="Deimos Space Logo" style="width:15%"/>
