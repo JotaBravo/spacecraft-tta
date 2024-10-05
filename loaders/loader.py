@@ -127,7 +127,7 @@ class TangoVideoLoader(Dataset):
             if self.mode == "train":
                 heatmap_next = self.read_heatmap(filename_next)
                 heatmap_next = self.transforms_hm(heatmap_next)
-#
+
             orientation = quat2euler(np.array(self.orientation[idx+self.delta]))
             translation = np.array(self.translation[idx+self.delta])
             pose_next   = np.concatenate((orientation,translation),axis=0).astype(np.float32)
@@ -150,7 +150,7 @@ class TangoVideoLoader(Dataset):
             if self.mode == "train":
                 heatmap_prev = self.read_heatmap(filename_prev)
                 heatmap_prev = self.transforms_hm(heatmap_prev)
-#   
+                 
             orientation = quat2euler(np.array(self.orientation[idx-self.delta]))
             translation = np.array(self.translation[idx-self.delta])
             pose_prev   = np.concatenate((orientation,translation),axis=0).astype(np.float32)
@@ -180,31 +180,13 @@ class TangoVideoLoader(Dataset):
 
             kpts = self.compute_kpts_locations(idx)
             dict_out["kpts"] = kpts
-        #
+        
             kpts_next = self.compute_kpts_locations(idx+self.delta)
             dict_out["kpts_next"] = kpts_next
-        #
+        
             kpts_prev = self.compute_kpts_locations(idx-self.delta)
             dict_out["kpts_prev"] = kpts_prev 
-#
-            ## this is because image is square
-            #flag_outside_x = np.bitwise_and(kpts[:,0] > self.margin, kpts[:,0] < (self.size[0]-self.margin))
-            #flag_outside_y = np.bitwise_and(kpts[:,1] > self.margin, kpts[:,1] < (self.size[1]-self.margin)) 
-            #flag_outside = np.bitwise_and(flag_outside_x, flag_outside_y)
-            #dict_out["flag_outside"] = flag_outside
-            #
-            #flag_outside_x = np.bitwise_and(kpts_next[:,0] > self.margin, kpts_next[:,0] < (self.size[0]-self.margin))
-            #flag_outside_y = np.bitwise_and(kpts_next[:,1] > self.margin, kpts_next[:,1] < (self.size[1]-self.margin))
-            #flag_outside_next = np.bitwise_and(flag_outside_x, flag_outside_y)
-            #dict_out["flag_outside_next"] = flag_outside_next
-            ##print(kpts_next[:,0],kpts_next[:,1])
-            #            
-            #flag_outside_x = np.bitwise_and(kpts_prev[:,0] > self.margin, kpts_prev[:,0] < (self.size[0]-self.margin))
-            #flag_outside_y = np.bitwise_and(kpts_prev[:,1] > self.margin, kpts_prev[:,1] < (self.size[1]-self.margin))
-            #
-#
-            #flag_outside_prev = np.bitwise_and(flag_outside_x, flag_outside_y)
-            #dict_out["flag_outside_prev"] = flag_outside_prev
+
             
         return dict_out
         
