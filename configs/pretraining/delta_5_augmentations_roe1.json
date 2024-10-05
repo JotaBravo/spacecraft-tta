@@ -1,0 +1,26 @@
+{
+    "data_path": "/home/jbp/Desktop/VPU/rhome/jbp/adaptive_ss/dataset/roe1/",
+    "target_size": [512, 512],
+    "rows": 512,
+    "cols": 512,
+    "std": 50,
+    "delta": 5,
+
+    "mean_img": 41.1280,
+    "std_img": 36.9064,
+
+    "device": "cuda:0",
+    "num_workers": 6,
+
+    "lr": 2.5e-4,
+    "batch_size": 6,
+    "epochs": 1,
+
+    "w_heatmap": 100,
+    "w_recon": 10,
+
+    "save_per_epoch": 100,
+    "save_dir": "ckpts/roe1/",
+
+    "temp": 10.0
+}

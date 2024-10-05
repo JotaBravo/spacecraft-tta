@@ -1,0 +1,38 @@
+{
+    "data_path": "dataset/roe1/",
+    "target_size": [512, 512],
+    "rows": 512,
+    "cols": 512,
+    "std": 50,
+    "delta": 5,
+    "shuffle": true,
+    "train_percentage": 100,
+    "safe_margin_kpts": 1,
+
+    "mean_img": 41.1280,
+    "std_img": 36.9064,
+
+    "device": "cuda:0",
+    "num_workers": 6,
+
+    "lr": 2.5e-5,
+    "batch_size": 6,
+    "epochs": 21,
+    "reduction_lr": 1,
+
+    "w_heatmap": 100,
+    "w_recon": 1,
+    "w_pnp": 50,
+    "w_render": 1,
+
+    "adaptative": true,
+
+    "activate_render": true,
+    "activate_pnp": true,
+
+    "save_per_epoch": 150,
+    "save_dir": "ckpts/roe1/",
+    "path_pretrained": "ckpts/roe1/configs/training/",
+
+    "temp": 10.0
+}

@@ -1,0 +1,33 @@
+{
+    "data_path": "/home/jbp/Desktop/VPU/rhome/jbp/adaptive_ss/dataset/roe2/",
+    "target_size": [512, 512],
+    "rows": 512,
+    "cols": 512,
+    "std": 50,
+    "delta": 5,
+    "safe_margin_kpts": 50,
+
+    "mean_img": 41.1280,
+    "std_img": 36.9064,
+
+    "device": "cuda:0",
+    "num_workers": 6,
+
+    "lr": 2.5e-4,
+    "batch_size": 6,
+    "epochs": 1,
+
+    "w_heatmap": 100,
+    "w_recon": 1,
+    "w_pnp": 50,
+    "w_render": 1,
+
+    "activate_render": true,
+    "activate_pnp": true,
+
+    "save_per_epoch": 150,
+    "save_dir": "ckpts/roe2/",
+    "path_pretrained": "ckpts/roe2/configs/pretraining/",
+
+    "temp": 10.0
+}
