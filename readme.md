@@ -87,7 +87,7 @@ To run the experiments, execute:
 
  #### Train from scratch
 
-To train from scratch you can execute: 
+To train from scratch you can execute. Optinally (recommended) you can download our [speedplus pretrained weights](https://drive.google.com/drive/folders/1Vfvf4DqvRFZhHjjcn4tKLd9PC1-alWhg?usp=drive_link) for the pretraining stage and place them under the weights folder. Otherwise you can comment the corresponding lines in pretrain.py
 
  ```
 source scripts/launch_training.sh
@@ -110,5 +110,5 @@ If you find our work or code useful, please cite:
 ```
 
 
-##Acknowledgment
+## Acknowledgments
 This work is supported by Comunidad Autónoma de Madrid (Spain) under the Grant IND2020/TIC-17515

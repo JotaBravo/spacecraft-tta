@@ -39,7 +39,7 @@ train_loader = DataLoader(tango_loader, batch_size=config["batch_size"], shuffle
                           num_workers=config["num_workers"], drop_last=True)
 
 encoder = poseresnet.get_encoder(50)
-encoder.load_state_dict(torch.load("./weights/encoder_model_59.pth"))
+encoder.load_state_dict(torch.load("./weights/encoder_speedplus.pth"))
 encoder.to(device)
 encoder.train()
 
@@ -48,7 +48,7 @@ im_decoder.to(device)
 im_decoder.train()
 
 kpt_decoder = poseresnet.get_decoder(50, final_layer=11)
-kpt_decoder.load_state_dict(torch.load("./weights/kpt_decoder_model_59.pth"))
+kpt_decoder.load_state_dict(torch.load("./weights/decoder_speedplus.pth"))
 kpt_decoder.to(device)
 kpt_decoder.train()
 
